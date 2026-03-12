@@ -6,7 +6,7 @@ export const technologiesData: techCardType[] = [
     techs: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"],
   },
   {
-    branch: "Banckend",
+    branch: "Backend",
     techs: [".NET", "ASP.NET Core", "C#", "REST APIs", "Entity Framework"],
   },
   {
