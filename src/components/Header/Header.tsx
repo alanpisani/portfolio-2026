@@ -2,7 +2,6 @@ import { useState } from "react";
 import { headerNavData } from "../../data/headerNavData";
 import { useScrolled } from "../../utils/scrolled";
 import "../Header/Header.css";
-import Logo from "./Logo/Logo";
 
 interface HeaderProps {
   onNavigate: (algo: string) => void;
@@ -16,8 +15,11 @@ export default function Header(props: HeaderProps) {
   return (
     <header className={scrolled ? "scrolled" : ""}>
       <div className="header-inner">
-        <Logo />
-        <button className="burger" onClick={() => setClicked(!clicked)}>
+        <button className="logo" onClick={() => props.onNavigate("Inicio")}>
+          <span>A</span>
+          <span>P</span>
+        </button>
+        <button className={`burger ${clicked ? "clicked" : ""}`} onClick={() => setClicked(!clicked)}>
           <span></span>
           <span></span>
           <span></span>

@@ -13,7 +13,6 @@ export const analysisStepData = [
     title: "Arquitectura",
     description:
       "A partir del modelo del sistema, defino la arquitectura técnica. Habitualmente desarrollo el backend como una API REST independiente y un frontend que consume sus endpoints. Esta separación permite mantener responsabilidades claras entre la lógica del sistema y la interfaz, además de facilitar la evolución o escalabilidad de cada componente.",
-    diagram: true,
   },
   {
     title: "Implementación",

@@ -1,12 +1,7 @@
+import { technologiesData } from "../../../../data/technologiesData";
+import TechCard from "./TechCard/TechCard";
 import "./Technologies.css";
 import { motion } from "framer-motion";
-
-const techStack = {
-  frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"],
-  backend: [".NET", "ASP.NET Core", "C#", "REST APIs", "Entity Framework"],
-  database: ["SQL Server", "MySQL", "PostgreSQL"],
-  tools: ["Git", "GitHub", "Docker", "Postman"],
-};
 
 export default function Technologies() {
   return (
@@ -20,41 +15,9 @@ export default function Technologies() {
         <h2>Tecnologías</h2>
 
         <div className="tech-grid">
-          <div className="tech-card">
-            <h3>Frontend</h3>
-            <ul>
-              {techStack.frontend.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="tech-card">
-            <h3>Backend</h3>
-            <ul>
-              {techStack.backend.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="tech-card">
-            <h3>Base de datos</h3>
-            <ul>
-              {techStack.database.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="tech-card">
-            <h3>Herramientas</h3>
-            <ul>
-              {techStack.tools.map((tech) => (
-                <li key={tech}>{tech}</li>
-              ))}
-            </ul>
-          </div>
+          {technologiesData.map((branch, index) => (
+            <TechCard branch={branch.branch} key={index} techs={branch.techs} />
+          ))}
         </div>
       </div>
     </motion.section>

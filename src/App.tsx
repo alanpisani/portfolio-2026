@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -7,12 +7,17 @@ import { headerNavData } from "./data/headerNavData";
 function App() {
   const [section, setSection] = useState("Inicio");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [section]);
+
   return (
     <>
-      <Header onNavigate={setSection} currentSession={section}/>
+      <Header onNavigate={setSection} currentSession={section} />
       <Main>
         {headerNavData.map(
-          (item, index) => section === item.name && <item.component key={index}/>,
+          (item, index) =>
+            section === item.name && <item.component key={index} />,
         )}
       </Main>
       <Footer />

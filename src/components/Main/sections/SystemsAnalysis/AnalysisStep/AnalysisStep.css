@@ -3,6 +3,7 @@
     padding: 1.6rem;
     border-radius: 8px;
     background: #fff;
+    box-shadow: var(--box-shadow);
 }
 
 .analysis-step h3 {

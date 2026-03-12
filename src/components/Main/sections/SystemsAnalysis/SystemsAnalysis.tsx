@@ -19,7 +19,6 @@ export default function SystemsAnalysis() {
             <AnalysisStep
               key={index}
               title={step.title}
-              diagram={step.diagram}
               description={step.description}
             />
           ))}
