@@ -1,0 +1,54 @@
+.analysis-step {
+    border: 1px solid #e2e2e2;
+    padding: 1.6rem;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.analysis-step h3 {
+    margin-bottom: 0.6rem;
+}
+
+.analysis-step:nth-child(1) {
+    background-color: rgba(255, 255, 0, .25);
+}
+
+.analysis-step:nth-child(2) {
+    background-color: rgba(255, 0, 255, .25);
+}
+
+.analysis-step:nth-child(3) {
+    background-color: rgba(0, 255, 255, .25);
+}
+
+.analysis-step:nth-child(4) {
+    background-color: rgba(0, 255, 0, .25);
+}
+
+.analysis-step:nth-child(5) {
+    background-color: rgba(255, 0, 0, .25);
+    grid-column: 1 / -1;
+    place-self: center;
+    width: clamp(325px, 30vw, 600px);
+}
+
+.architecture-diagram {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.arch-box {
+    border: 1px solid #ccc;
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+
+    text-align: center;
+    background-color: var(--text-white);
+}
+
+.arch-arrow {
+    opacity: 0.6;
+    color: var(--text);
+}

@@ -1,0 +1,25 @@
+.analysis-container {
+    width: 100%;
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+    display: grid;
+    place-items: center;
+    gap: 2.5rem;
+    
+    padding: 4rem 0;
+}
+
+.analysis-flow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .analysis-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .architecture-diagram {
+        flex-wrap: wrap;
+    }
+}

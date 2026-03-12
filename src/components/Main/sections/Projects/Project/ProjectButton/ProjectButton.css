@@ -1,0 +1,70 @@
+/** BASE **/
+
+.project__button {
+    border-radius: .5rem;
+    text-decoration: none;
+
+    width: fit-content;
+    padding: .5rem clamp( .5rem, 1vw , 1rem);
+
+    display: flex;
+    align-items: center;
+
+    transition: var(--transition);
+
+}
+
+/** VERSIÓN GITHUB **/
+
+.project__button.github {
+    color: white;
+    background-color: #000;
+}
+
+.project__button.github:hover {
+    background-color: #111;
+}
+
+/** EL DE DESCARGA **/
+
+.project__button.download {
+    background-color: rgb(0, 107, 91);
+    color: var(--background-color)
+}
+
+.project__button.download:hover{
+    background-color: rgba(0, 107, 91, 0.9);
+}
+
+/** Boton href comunardo **/
+
+.project__button.common {
+    position: relative;
+    border: 0;
+    background: var(--principal-color);
+    color: var(--background-color);
+    font-weight: 600;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.project__button.common:hover {
+    box-shadow: inset 0px 0px 10px var(--principal-color);
+}
+
+.project__button.common::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background: #ffffff77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+}
+
+.project__button.common:hover::after {
+    left: 100%;
+}

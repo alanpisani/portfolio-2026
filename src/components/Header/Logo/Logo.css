@@ -1,0 +1,15 @@
+.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border:0;
+    background-color: inherit;
+}
+
+.logo span:first-child {
+    color: var(--principal-color)
+}
+
+.logo span:last-child {
+    color: #16A34A;
+}

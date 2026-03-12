@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  font-family: Outfit;
+  color: var(--text);
+
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-color: var(--principal-color) transparent;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+:root {
+  --principal-color: #0891B2;
+  --text: #2f2f2f;
+  --text-white: #f1f5f9;
+  --background-color: #fffeee;
+  --transition: all .2s ease;
+  --box-shadow: 3px 3px 3px 3px var(--text);
+}
+
+section {
+  width: clamp(320px, 75vw, 1440px);
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw,3.5rem);
+  text-align: center;
+}
