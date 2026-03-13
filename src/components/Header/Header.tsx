@@ -2,6 +2,7 @@ import { useState } from "react";
 import { headerNavData } from "../../data/headerNavData";
 import { useScrolled } from "../../utils/scrolled";
 import "../Header/Header.css";
+import DarkModeButton from "./DarkModeButton/DarkModeButton";
 
 interface HeaderProps {
   onNavigate: (algo: string) => void;
@@ -19,7 +20,10 @@ export default function Header(props: HeaderProps) {
           <span>A</span>
           <span>P</span>
         </button>
-        <button className={`burger ${clicked ? "clicked" : ""}`} onClick={() => setClicked(!clicked)}>
+        <button
+          className={`burger ${clicked ? "clicked" : ""}`}
+          onClick={() => setClicked(!clicked)}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -39,6 +43,7 @@ export default function Header(props: HeaderProps) {
                 </button>
               </li>
             ))}
+            <DarkModeButton />
           </ul>
         </nav>
       </div>

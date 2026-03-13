@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "../AboutMe/AboutMe.css";
 
-import img from "../../../../assets/img/foto.jpg";
+import img from "../../../../assets/img/foto.webp";
 
 export default function AboutMe() {
   return (
@@ -19,7 +19,7 @@ export default function AboutMe() {
           animate={{ opacity: 1 }}
           transition={{ duration: .7 }}
         >
-          <img src={img} alt="" />
+          <img src={img} alt="" loading="eager" decoding="async"/>
         </motion.div>
         <motion.div className="about-me-content" initial={{  opacity: 0}} animate={{ opacity: 1 }} transition={{ duration: 1, delay: .5 }}>
           <h2>Sobre mí</h2>

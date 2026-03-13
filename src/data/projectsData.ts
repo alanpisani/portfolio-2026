@@ -1,6 +1,6 @@
-import img from "../assets/img/project-1.png";
-import img2 from "../assets/img/project-2.jpeg";
-import img3 from "../assets/img/project-3.png";
+import img from "../assets/img/project-1.webp";
+import img2 from "../assets/img/project-3.webp";
+import img3 from "../assets/img/project-3.webp";
 
 import dotnet from "../assets/img/icons/dotnet.svg";
 import mysql from "../assets/img/icons/mysql.png";

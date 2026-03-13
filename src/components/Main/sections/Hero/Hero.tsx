@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Button from "../../../shared/Button/Button";
 import "../Hero/Hero.css";
 import TypedComponent from "./Typed/TypedComponent";
-import img from "../../../../assets/img/perfil-cv.jpeg";
+import img from "../../../../assets/img/perfil-cv.webp";
 
 export default function Hero() {
   return (

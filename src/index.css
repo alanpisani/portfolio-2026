@@ -21,7 +21,6 @@ html {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-
 }
 
 :root {
@@ -33,11 +32,21 @@ html {
   --box-shadow: 3px 3px 3px 3px var(--text);
 }
 
+:root[data-theme="light"] {
+  --background-color: #fffeee;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #1a1625;
+  --text: var(--text-white);
+  --box-shadow: 3px 3px 3px 3px #101;
+}
+
 section {
   width: clamp(320px, 75vw, 1440px);
 }
 
 h2 {
-  font-size: clamp(2rem, 3vw,3.5rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
   text-align: center;
 }

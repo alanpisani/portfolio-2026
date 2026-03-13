@@ -4,11 +4,11 @@
     align-items: center;
 
     width: clamp(100px, 25vw, 175px);
-    padding: 1rem 1.75rem ;
+    padding: 1rem 1.75rem;
 
     border: 3px solid var(--principal-color);
     border-radius: .3rem;
-    box-shadow: 7px 5px 3px 0px var(--text);
+    box-shadow: 7px 5px 3px 0px #2f2f2f;
 
     color: var(--text);
     text-decoration: none;
@@ -17,6 +17,10 @@
 
     transition: all .1s ease;
     transform: translate3d(-2px, -2px, 0);
+
+    :root[data-theme="dark"] & {
+        box-shadow: 7px 5px 3px 0px #101;
+    }
 
 }
 
@@ -27,7 +31,7 @@
 
 .button.primary {
     background-color: var(--principal-color);
-    color: var(--background-color);
+    color: #fffeee;
     border: 0;
 }
 
