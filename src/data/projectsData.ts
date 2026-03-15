@@ -1,5 +1,5 @@
 import img from "../assets/img/project-1.webp";
-import img2 from "../assets/img/project-3.webp";
+import img2 from "../assets/img/project-2.webp";
 import img3 from "../assets/img/project-3.webp";
 
 import dotnet from "../assets/img/icons/dotnet.svg";
