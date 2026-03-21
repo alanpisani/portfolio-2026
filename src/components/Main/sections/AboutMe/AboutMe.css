@@ -33,7 +33,7 @@
     font-size: clamp(1.25rem, 1.5vw, 1.5rem);
 }
 
-@media screen and (max-width: 897px) {
+@media screen and (max-width: 915px) {
     .about-me {
         flex-direction: column;
         gap:1.5rem;

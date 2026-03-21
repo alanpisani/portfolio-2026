@@ -2,7 +2,8 @@ import { useState } from "react";
 import { headerNavData } from "../../data/headerNavData";
 import { useScrolled } from "../../utils/scrolled";
 import "../Header/Header.css";
-import DarkModeButton from "./DarkModeButton/DarkModeButton";
+import DarkModeButton from "./components/DarkModeButton/DarkModeButton";
+import Burger from "./components/Burger/Burger";
 
 interface HeaderProps {
   onNavigate: (algo: string) => void;
@@ -20,14 +21,7 @@ export default function Header(props: HeaderProps) {
           <span>A</span>
           <span>P</span>
         </button>
-        <button
-          className={`burger ${clicked ? "clicked" : ""}`}
-          onClick={() => setClicked(!clicked)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <Burger toggle={setClicked} isClicked={clicked}/>
         <nav className={`header-nav ${clicked ? "clicked" : ""}`}>
           <ul>
             {headerNavData.map((item, index) => (

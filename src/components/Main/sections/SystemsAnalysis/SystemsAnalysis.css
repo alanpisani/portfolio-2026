@@ -14,7 +14,7 @@
     gap: 2rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 915px) {
     .analysis-flow {
         grid-template-columns: 1fr;
     }

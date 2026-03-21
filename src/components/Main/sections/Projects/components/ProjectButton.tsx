@@ -1,4 +1,4 @@
-import "../ProjectButton/ProjectButton.css";
+import "./ProjectButton.css";
 import { SiGithub } from "react-icons/si";
 
 interface ProjectButtonProps {
@@ -14,8 +14,8 @@ export default function ProjectButton(props: ProjectButtonProps) {
     <a
       className={classname}
       href={props.href}
-      target={props.descargable ? "undefined" : "_blank"}
-      rel={props.descargable ? "undefined" : "noopener noreferrer"}
+      target= "_blank"
+      rel="noopener noreferrer"
     >
       {props.descargable ? (
         "Descargar"
@@ -25,7 +25,7 @@ export default function ProjectButton(props: ProjectButtonProps) {
           Ir a GitHub
         </>
       ) : (
-        "Ver demo"
+        "Ver proyecto"
       )}
     </a>
   );

@@ -1,6 +1,9 @@
-import type { techType } from "./techType";
+interface techType{
+    name: string;
+    icon: string;
+}
 
-export interface projectDataType{
+export type projectDataType = {
     name: string;
     simple_description: string;
     img: string;
@@ -8,5 +11,4 @@ export interface projectDataType{
     github_href: string;
     techs: techType[];
     descargable?: boolean;
-    inverted?: boolean;
 }

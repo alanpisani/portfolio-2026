@@ -1,10 +1,11 @@
-import type { projectDataType } from "../../../../../types/projectDataType";
-import "../Project/Project.css";
-import ProjectButton from "./ProjectButton/ProjectButton";
+import type { projectDataType } from "../type";
+import "./Project.css";
+import ProjectButton from "./ProjectButton";
+
 
 export default function Project(props: projectDataType) {
   return (
-    <div className={`project ${props.inverted ? "inverted" : ""}`}>
+    <div className="project">
       <div className="project-img-container">
         <img src={props.img} alt="" />
       </div>

@@ -5,16 +5,17 @@
 
 }
 
-html,
+html {
+  scrollbar-color: var(--principal-color) transparent;
+}
+
 body {
   font-family: Outfit;
   color: var(--text);
-
 }
 
-html {
-  overflow-y: scroll;
-  scrollbar-color: var(--principal-color) transparent;
+html, body {
+  overflow-x: hidden;
 }
 
 #root {
@@ -49,4 +50,8 @@ section {
 h2 {
   font-size: clamp(2rem, 3vw, 3.5rem);
   text-align: center;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }

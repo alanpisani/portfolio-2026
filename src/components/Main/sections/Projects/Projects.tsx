@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import { projectsData } from "../../../../data/projectsData";
-import "../Projects/Projects.css";
-import Project from "./Project/Project";
+import { projectsData } from "./data";
+import "./Projects.css";
+import Project from "./components/Project";
 
 export default function Projects() {
   return (
@@ -31,7 +31,6 @@ export default function Projects() {
               github_href={project.github_href}
               techs={project.techs}
               descargable={project.descargable}
-              inverted={index % 2 == 1}
             />
           ))}
         </motion.div>

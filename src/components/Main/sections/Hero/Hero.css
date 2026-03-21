@@ -8,11 +8,12 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    width: clamp(350px, 35vw, 700px);
 }
 
 .hero-title-container {
     color: var(--text);
-    width: clamp(300px, 35vw, 700px);
+    
 
     display: flex;
     flex-direction: column;
@@ -46,7 +47,7 @@
     height: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 915px){
     .hero{
         flex-direction: column-reverse;
     }

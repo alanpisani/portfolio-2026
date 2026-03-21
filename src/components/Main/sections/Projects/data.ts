@@ -1,18 +1,18 @@
-import img from "../assets/img/project-1.webp";
-import img2 from "../assets/img/project-2.webp";
-import img3 from "../assets/img/project-3.webp";
+import img from "./img/project-1.webp";
+import img2 from "./img/project-2.webp";
+import img3 from "./img/project-3.webp";
 
-import dotnet from "../assets/img/icons/dotnet.svg";
-import mysql from "../assets/img/icons/mysql.png";
-import react from "../assets/img/icons/react.svg";
-import ts from "../assets/img/icons/ts.svg";
-import flutter from "../assets/img/icons/flutter.svg";
-import html from "../assets/img/icons/html.svg";
-import css from "../assets/img/icons/css.svg";
-import js from "../assets/img/icons/js.svg";
-import bootstrap from "../assets/img/icons/bootstrap.svg";
+import dotnet from "../../../../assets/img/icons/dotnet.svg";
+import mysql from "../../../../assets/img/icons/mysql.png";
+import react from "../../../../assets/img/icons/react.svg";
+import ts from "../../../../assets/img/icons/ts.svg";
+import flutter from "../../../../assets/img/icons/flutter.svg";
+import html from "../../../../assets/img/icons/html.svg";
+import css from "../../../../assets/img/icons/css.svg";
+import js from "../../../../assets/img/icons/js.svg";
+import bootstrap from "../../../../assets/img/icons/bootstrap.svg";
 
-import type { projectDataType } from "../types/projectDataType";
+import type { projectDataType } from "./type";
 
 export const projectsData: projectDataType[] = [
   {
@@ -47,7 +47,7 @@ export const projectsData: projectDataType[] = [
       "¡Variedad de minijuegos en una sola app para celular: Piedra-papel-tijera, juegos matematicos, sopa de letras, juego de memoria, entre otros!",
     img: img2,
     github_href: "https://github.com/alanpisani/seminario-2",
-    href: "/apk/app-release.rar",
+    href: "https://drive.google.com/file/d/1YfoINZ4EeOL9NIWZKRJhpqUpTerH_3hp/view?usp=sharing",
     techs: [
       {
         name: "Flutter",
