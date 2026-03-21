@@ -84,8 +84,7 @@
 
 @media screen and (max-width: 897px) {
 
-    .project,
-    .project.inverted {
+    .project, .project:nth-child(even) {
         flex-direction: column;
         gap: 2rem;
     }
