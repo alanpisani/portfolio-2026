@@ -15,10 +15,6 @@ body {
   color: var(--text);
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 #root {
   min-height: 100dvh;
   display: flex;

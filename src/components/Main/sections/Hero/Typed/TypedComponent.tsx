@@ -6,10 +6,11 @@ import "../Typed/TypedComponent.css"
 export default function TypedComponent(){
     useEffect(() => {
         const typed = new Typed("#typed", {
-            strings: ["Analista de Sistemas"],
-            typeSpeed: 60,
-            backSpeed: 0,
-            loop: false,
+            strings: ["Desarrollador .NET + React", "Analista de sistemas"],
+            typeSpeed: 25,
+            backSpeed: 25,
+            backDelay: 2000,
+            loop: true,
             showCursor: true,
             cursorChar: "|"
         });

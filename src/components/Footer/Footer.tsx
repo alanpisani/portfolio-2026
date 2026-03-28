@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className={scrolled ? "scrolled" : ""}>
       <div className="footer-inner">
-        <p>© 2022 – {actualYear} Alan Pisani</p>
+        <p>© Alan Pisani 2022 – {actualYear} </p>
         <div className="footer-icons">
           {footerData.map((icon, index) => (
             <a

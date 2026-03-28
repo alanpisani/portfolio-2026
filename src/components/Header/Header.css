@@ -28,7 +28,7 @@ header.scrolled {
     font-size: 1.5rem;
     font-weight: bolder;
     cursor: pointer;
-    border: 0;
+    text-decoration: none;
     background-color: inherit;
 }
 
@@ -48,8 +48,7 @@ header.scrolled {
 }
 
 .nav-item {
-    border: 0;
-    cursor: pointer;
+    text-decoration: none;
     background-color: transparent;
 
     color: #343;

@@ -1,30 +1,26 @@
-import { useEffect, useState } from "react";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import { headerNavData } from "./data/headerNavData";
 import { usePreloadImg } from "./hooks/usePreloadImg";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./layout/Layout";
+import Hero from "./components/Main/sections/Hero/Hero";
+import AboutMe from "./components/Main/sections/AboutMe/AboutMe";
+import Projects from "./components/Main/sections/Projects/Projects";
+import Technologies from "./components/Main/sections/Technologies/Technologies";
 
 function App() {
-  const [section, setSection] = useState("Inicio");
-
+  
   usePreloadImg();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [section]);
-
   return (
-    <>
-      <Header onNavigate={setSection} currentSession={section} />
-      <Main>
-        {headerNavData.map(
-          (item, index) =>
-            section === item.name && <item.component key={index} />,
-        )}
-      </Main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Hero />}/>
+          <Route path="acerca" element={<AboutMe />}/>
+          <Route path="proyectos" element={<Projects />}/>
+          <Route path="tecnologias" element={<Technologies />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

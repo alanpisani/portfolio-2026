@@ -1,3 +1,11 @@
-#typed, .typed-cursor{
-    font-size: clamp(1.75rem, 3vw, 4rem);
+#typed,
+.typed-cursor {
+    font-size: clamp(1.75rem, 2.5vw, 4rem);
+}
+
+@media (max-width: 900px) {
+    #typed {
+        white-space: nowrap;
+    }
+
 }

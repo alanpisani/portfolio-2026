@@ -28,8 +28,8 @@ export default function Hero() {
             <p>Diseño y desarrollo software web orientado a negocio.</p>
           </div>
           <div className="hero-buttons">
-            <Button text="Descargar CV" href="/cv/CV - Alan Pisani.pdf" isPrimary download/>
-            <Button text="Ver CV" href="/cv/CV - Alan Pisani.pdf" />
+            <Button text="Descargar CV" href="/cv/Alan Pisani - CV.pdf" isPrimary download/>
+            <Button text="Ver CV" href="/cv/Alan Pisani - CV.pdf" />
           </div>
         </motion.div>
 
@@ -39,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: .5 }}
         >
-          <img src={img} alt="" />
+          <img src={img} alt="foto de Alan Pisani" />
         </motion.div>
       </div>
     </motion.section>

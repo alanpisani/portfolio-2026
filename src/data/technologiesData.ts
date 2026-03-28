@@ -3,7 +3,14 @@ import type { techCardType } from "../types/TechCardType";
 export const technologiesData: techCardType[] = [
   {
     branch: "Frontend",
-    techs: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    techs: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+    ],
   },
   {
     branch: "Backend",
