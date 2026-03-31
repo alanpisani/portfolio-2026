@@ -1,27 +1,16 @@
-.tech-container {
+.tech-section {
     display: flex;
     flex-direction: column;
-    gap:2.5rem;
+    padding: 4rem 0;
+    gap: 3rem;
+
+}
+
+.techs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
     align-items: center;
 
-    padding: 4rem 0;
-    width: 100%;
-}
 
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-}
-
-@media (max-width: 900px) {
-    .tech-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 500px) {
-    .tech-grid {
-        grid-template-columns: 1fr;
-    }
 }

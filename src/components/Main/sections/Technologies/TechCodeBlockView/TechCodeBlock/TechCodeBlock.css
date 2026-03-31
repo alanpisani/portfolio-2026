@@ -1,0 +1,26 @@
+.key {
+  color: #9cdcfe;
+  &:before{
+    content: '    ';
+  }
+}
+
+.string {
+  color: #ce9178;
+}
+
+.number {
+  color: #b5cea8; 
+}
+
+.boolean {
+  color: #569cd6;
+}
+
+.null {
+  color: #569cd6;
+}
+
+.bracket {
+  color: #d4d4d4;
+}

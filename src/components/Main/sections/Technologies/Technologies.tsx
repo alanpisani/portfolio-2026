@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { technologiesData } from "../../../../data/technologiesData";
-import TechCard from "./TechCard/TechCard";
 import "./Technologies.css";
 import { motion } from "framer-motion";
+import Button from "../../../shared/Button/Button";
+import TechCardView from "./TechCardView/TechCardView";
+import TechCodeBlockView from "./TechCodeBlockView/TechCodeBlockView";
 
 export default function Technologies() {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <motion.section
       className="tech-section"
@@ -11,14 +16,17 @@ export default function Technologies() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
     >
-      <div className="tech-container">
+      <div className="techs-container">
         <h2>Tecnologías</h2>
-
-        <div className="tech-grid">
-          {technologiesData.map((branch, index) => (
-            <TechCard branch={branch.branch} key={index} techs={branch.techs} />
-          ))}
-        </div>
+        <Button
+          onClick={() => setToggle(!toggle)}
+          text={toggle ? "Vista Código" : "Vista Tarjetas"}
+        />
+        {!toggle ? (
+         <TechCodeBlockView data={technologiesData} />
+        ) : (
+          <TechCardView data={technologiesData}/>
+        )}
       </div>
     </motion.section>
   );

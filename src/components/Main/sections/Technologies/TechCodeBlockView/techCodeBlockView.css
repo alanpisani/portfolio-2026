@@ -1,0 +1,29 @@
+.code-block {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    line-height: 1.6;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.keyword {
+    color: #569cd6;
+}
+
+.variable {
+    color: #9cdcfe;
+    ;
+}
+
+@media (max-width: 900px) {
+
+    .code-block {
+        overflow-x: visible;
+
+    }
+}

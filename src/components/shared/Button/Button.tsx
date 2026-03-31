@@ -2,7 +2,8 @@ import "./Button.css";
 
 interface ButtonProps {
   text: string;
-  href: string;
+  href?: string;
+  onClick?: () => void;
   isPrimary?: boolean;
   download?: boolean;
 }
@@ -15,6 +16,7 @@ export default function Button(props: ButtonProps) {
       download={props.download}
       target={props.download ? "undefined" : "_blank"}
       rel={props.download ? "undefined" : "noopener noreferrer"}
+      onClick={props.onClick}
     >
       {props.text}
     </a>

@@ -1,7 +1,6 @@
 .tech-card {
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     box-shadow: var(--box-shadow);
 }
@@ -10,7 +9,7 @@
     transform: scale(1.05);
 }
 
-.tech-card-title-container{
+.tech-card-title-container {
     border-radius: 1rem;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;

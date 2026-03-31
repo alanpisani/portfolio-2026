@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
 import "./DarkModeButton.css";
+import { useTheme } from "../../../../hooks/useTheme";
 
 export default function DarkModeButton() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    document.documentElement.dataset.theme = theme;
-  }, [theme]);
+  const { theme, setTheme } = useTheme();
 
   return (
     <input
