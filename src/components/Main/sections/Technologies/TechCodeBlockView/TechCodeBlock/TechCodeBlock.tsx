@@ -7,7 +7,8 @@ export default function TechCodeBlock(props: techCardType) {
       <span className="export-color">{"  {"}</span>
       <br />
       <span className="key">rama: </span>
-      <span className="string">"{props.branch}",</span>
+      <span className="string">"{props.branch}"</span>
+      <span className="bracket">,</span>
       <br />
       <span className="key">tecnologias: </span>
       <span className="blue-bracket">[</span>
