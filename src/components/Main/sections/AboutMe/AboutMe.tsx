@@ -24,17 +24,9 @@ export default function AboutMe() {
         <motion.div className="about-me-content" initial={{  opacity: 0}} animate={{ opacity: 1 }} transition={{ duration: 1, delay: .5 }}>
           <h2>Sobre mí</h2>
           <p>
-            Como Analista de Sistemas, siempre me interesó cómo construir
-            aplicaciones que realmente resuelvan problemas y aporten valor. Me
-            gusta entender los procesos detrás de cada proyecto, pensar en
-            soluciones claras y organizadas, y luego llevarlas a la práctica
-            construyendo software web que sea fácil de mantener y escalar.
-            <br />
-            <br /> Hoy busco involucrarme en proyectos donde pueda aportar desde
-            el primer día, seguir creciendo y enfrentar problemas reales,
-            aportando soluciones concretas y bien pensadas que conecten la
-            tecnología con los objetivos del negocio.
+            Como Analista de Sistemas, me interesa construir aplicaciones web que resuelvan problemas reales y aporten valor. Me enfoco en comprender los procesos detrás de cada proyecto, diseñar soluciones claras y organizadas, y llevarlas a la práctica con tecnologías como .NET y React, creando software mantenible y escalable.
           </p>
+          <p>Busco involucrarme en proyectos donde pueda aportar desde el primer día, seguir aprendiendo y enfrentar desafíos reales, entregando soluciones concretas que conecten la tecnología con los objetivos del negocio.</p>
         </motion.div>
       </div>
     </motion.section>
