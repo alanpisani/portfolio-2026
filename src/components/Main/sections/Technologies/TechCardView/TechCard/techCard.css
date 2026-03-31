@@ -17,7 +17,7 @@
 
 .tech-card-title-container h3 {
     width: 100%;
-
+    color: var(--text-white);
     text-align: center;
     padding: 3rem;
 }
@@ -36,17 +36,17 @@
 }
 
 .tech-card:nth-child(1) .tech-card-title-container {
-    background-color: rgba(255, 0, 0, .5);
+    background: linear-gradient(#c04646, #7a0d0d );
 }
 
 .tech-card:nth-child(2) .tech-card-title-container {
-    background-color: rgba(0, 255, 0, .5);
+    background: linear-gradient(#398155, #026829);
 }
 
 .tech-card:nth-child(3) .tech-card-title-container {
-    background-color: rgba(0, 0, 255, .5);
+    background: linear-gradient(#4646c2, #0000ff);
 }
 
 .tech-card:nth-child(4) .tech-card-title-container {
-    background-color: rgba(255, 255, 0, .5);
+    background: linear-gradient(#eba835, #d97706);
 }

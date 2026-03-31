@@ -7,7 +7,6 @@
     border-radius: 8px;
     line-height: 1.6;
     font-size: 1rem;
-    width: 100%;
 
     white-space: pre;
 }
@@ -36,5 +35,6 @@
 
     .code-block {
         overflow-x: auto;
+        width: 100%;
     }
 }
