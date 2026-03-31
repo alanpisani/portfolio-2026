@@ -24,4 +24,4 @@ export const technologiesData: techCardType[] = [
     branch: "Herramientas",
     techs: ["Git", "GitHub", "Docker", "Postman"],
   },
-];
+]; 

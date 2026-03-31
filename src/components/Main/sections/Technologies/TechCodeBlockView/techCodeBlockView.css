@@ -17,8 +17,19 @@
 }
 
 .variable {
-    color: #9cdcfe;
-    ;
+    color: #4fc1ff;
+}
+
+.export-color {
+    color: #c586c0
+}
+
+.type-color {
+    color: #4ec9b0;
+}
+
+.bracket {
+  color: #d4d4d4;
 }
 
 @media (max-width: 900px) {

@@ -4,7 +4,7 @@ import TechCodeBlock from "./TechCodeBlock/TechCodeBlock";
 import "./TechCodeBlockView.css";
 
 interface Props {
-    data: techCardType[];
+  data: techCardType[];
 }
 
 export default function TechCardView({ data }: Props) {
@@ -15,10 +15,16 @@ export default function TechCardView({ data }: Props) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
     >
-      <span className="keyword">
-        export const <span className="variable">data</span>
-        <span className="bracket"> = [</span>
+      <span className="export-color">export</span>
+      <span className="keyword"> const </span>
+      <span className="variable">data: </span>
+      <span className="type-color">
+        techType<span className="yellow-bracket">[]</span>
       </span>
+      
+      <span className="bracket"> = </span>
+      <span className="yellow-bracket">[</span>
+
       <br />
       {data.map((tech) => (
         <TechCodeBlock
@@ -28,7 +34,8 @@ export default function TechCardView({ data }: Props) {
         />
       ))}
 
-      <span className="bracket">]</span>
+      <span className="yellow-bracket">]</span>
+      <span className="bracket">;</span>
     </motion.pre>
   );
-} 
+}

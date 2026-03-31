@@ -21,6 +21,10 @@
   color: #569cd6;
 }
 
-.bracket {
-  color: #d4d4d4;
+.yellow-bracket {
+  color: #ffd700;
+}
+
+.blue-bracket {
+  color: #179fff;
 }
