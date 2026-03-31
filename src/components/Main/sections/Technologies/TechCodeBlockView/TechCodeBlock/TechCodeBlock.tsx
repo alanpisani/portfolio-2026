@@ -15,7 +15,7 @@ export default function TechCodeBlock(props: techCardType) {
       <span>: </span>
       <span className="bracket">  [</span>
       {props.techs.map((tech, index) => (
-        <span className="string">
+        <span className="string" key={`${tech}-${index}`}>
           "{tech}"
           <span className="bracket">
             {index != props.techs.length - 1 && ", "}
@@ -29,4 +29,4 @@ export default function TechCodeBlock(props: techCardType) {
 
     </div>
   );
-}
+} 

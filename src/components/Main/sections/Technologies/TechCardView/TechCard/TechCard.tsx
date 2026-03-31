@@ -1,4 +1,4 @@
-import type { techCardType } from "../../../../../types/TechCardType";
+import type { techCardType } from "../../../../../../types/TechCardType";
 import "../TechCard/techCard.css";
 
 export default function TechCard(props: techCardType) {

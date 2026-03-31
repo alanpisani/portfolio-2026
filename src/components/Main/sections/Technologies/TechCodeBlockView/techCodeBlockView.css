@@ -5,10 +5,11 @@
     font-size: 14px;
     padding: 20px;
     border-radius: 8px;
-    overflow-x: auto;
     line-height: 1.6;
     font-size: 1rem;
     width: 100%;
+
+    white-space: pre;
 }
 
 .keyword {
@@ -23,7 +24,6 @@
 @media (max-width: 900px) {
 
     .code-block {
-        overflow-x: visible;
-
+        overflow-x: auto;
     }
 }

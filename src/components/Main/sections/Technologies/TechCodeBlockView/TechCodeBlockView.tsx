@@ -31,4 +31,4 @@ export default function TechCardView({ data }: Props) {
       <span className="bracket">]</span>
     </motion.pre>
   );
-}
+} 
